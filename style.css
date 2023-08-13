@@ -1,27 +1,102 @@
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: whitesmoke;
+    
+}
+
 li {
     list-style-type: none;
     display: inline;
-    float: right;
-    color: black
+    float: left;
 }
 
 a {
     display: block;
     margin: 30px;
     color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
 
 }
 
 a:hover {
-    color: yellow;
+    background-color: #478ef8;
 }
 
-img {
-    border-radius: 100%;
-    max-block-size: 300px;
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
 }
 
-body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+body header {
+    background-color: whitesmoke;
 }
+
+header section {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-name {
+    position: relative;
+}
+
+.my-name h1 {
+    color: #fff;
+    font-size: 8em;
+    position: absolute;
+    transform: translate(-50%, -50%)
+}
+
+.my-name h1:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px #2a14b8;
+}
+
+.my-name h1:nth-child(2) {
+    color: #478ef8;
+    animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0%,
+	100% {
+		clip-path: polygon(
+			0% 45%,
+			16% 44%,
+			33% 50%,
+			54% 60%,
+			70% 61%,
+			84% 59%,
+			100% 52%,
+			100% 100%,
+			0% 100%
+		);
+	}
+
+	50% {
+		clip-path: polygon(
+			0% 60%,
+			15% 65%,
+			34% 66%,
+			51% 62%,
+			67% 50%,
+			84% 45%,
+			100% 46%,
+			100% 100%,
+			0% 100%
+		);
+	}
+}
+
