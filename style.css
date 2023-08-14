@@ -1,5 +1,5 @@
 
-ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -8,13 +8,13 @@ ul {
     
 }
 
-li {
+nav li {
     list-style-type: none;
     display: inline;
     float: left;
 }
 
-a {
+nav a {
     display: block;
     margin: 30px;
     color: black;
@@ -24,8 +24,17 @@ a {
 
 }
 
-a:hover {
+nav a:hover {
     background-color: #478ef8;
+}
+
+img {
+    background-color: whitesmoke;
+    border-radius: 100%;
+    max-width: 150px;
+    max-height: 150px;
+    float: right;
+    margin-right: 50px;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
@@ -46,6 +55,7 @@ header section {
     min-height: 100vh;
     align-items: center;
     justify-content: center;
+    margin-left: 200px;
 }
 
 .my-name {
@@ -100,3 +110,13 @@ header section {
 	}
 }
 
+section ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+section li {
+    align-content: space-between;
+}
