@@ -28,7 +28,12 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #478ef8;
+    background-color: rgba(249, 249, 94, 0.712);
+}
+
+#avatar-right {
+    float: right;
+    margin-top: 10px;
 }
 
 img {
@@ -51,14 +56,15 @@ img {
 
 body header {
     background-color: whitesmoke;
+    max-height: 700px;
 }
 
 header section {
     display: flex;
     min-height: 100vh;
-    align-items: center;
     justify-content: center;
-    margin-left: 200px;
+    margin-top: 175px;
+    background: linear-gradient(whitesmoke 50%, #decba4 65%)
 }
 
 .my-name {
@@ -74,11 +80,11 @@ header section {
 
 .my-name h1:nth-child(1) {
     color: transparent;
-    -webkit-text-stroke: 2px #2a14b8;
+    -webkit-text-stroke: 2px #15687b;
 }
 
 .my-name h1:nth-child(2) {
-    color: #478ef8;
+    color: #4dd6f5;
     animation: animate 4s ease-in-out infinite;
 }
 
@@ -113,8 +119,62 @@ header section {
 	}
 }
 
-.main-background {
-    background-image: repeating-linear-gradient(#478ef8 20%, whitesmoke 80%, #478ef8 20%)
+.wave-container {  
+    height: 40vh;
+    background-color: #decba4;
+    position: relative;
+  }
+  
+  .wave-container::before {   
+    content: "";
+    width: 100%;
+    height: 54px;
+    position: absolute;
+    bottom: -0.3%;
+    left: 0;
+    background-size: auto;
+    background-repeat: repeat no-repeat;
+    background-position: 68vw bottom;
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 98L50 92C100 86 200 74 300 50C400 26 500 -10 600 2C700 14 800 74 900 98C1000 122 1100 110 1150 104L1200 98V134H1150C1100 134 1000 134 900 134C800 134 700 134 600 134C500 134 400 134 300 134C200 134 100 134 50 134H0V98Z' fill='%234dd6f5'/></svg>");
+  }
+  
+  @media(max-width:850px) {
+    .wave-container::before {    
+      height: 27px
+    }  
+  }
+ 
+#My-Work {
+    background-color: #4dd6f5;
+}  
+
+.wave {  
+    height: 40vh;
+    background-color: #4dd6f5;
+    position: relative;
+  }
+  
+  .wave::before {   
+    content: "";
+    width: 100%;
+    height: 54px;
+    position: absolute;
+    bottom: -0.3%;
+    left: 0;
+    background-size: auto;
+    background-repeat: repeat no-repeat;
+    background-position: 49vw bottom;
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 98L50 92C100 86 200 74 300 50C400 26 500 -10 600 2C700 14 800 74 900 98C1000 122 1100 110 1150 104L1200 98V134H1150C1100 134 1000 134 900 134C800 134 700 134 600 134C500 134 400 134 300 134C200 134 100 134 50 134H0V98Z' fill='%2352a0b2'/></svg>");
+  }
+  
+  @media(max-width:850px) {
+    .wave::before {    
+      height: 27px
+    }  
+  }
+
+#Contact-Me {
+    background-color: #52A0B2;
 }
 
 section ul {
