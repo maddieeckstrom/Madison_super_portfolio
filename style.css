@@ -1,9 +1,13 @@
+root: {
+    --bg-color: whitesmoke;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: whitesmoke;
+    background-color: var(--bg-color);
     
 }
 
@@ -33,7 +37,7 @@ nav a:hover {
 }
 
 nav img {
-    background-color: whitesmoke;
+    background-color: var(--bg-color);
     border-radius: 100%;
     max-width: 150px;
     max-height: 150px;
@@ -51,7 +55,7 @@ nav img {
 }
 
 body header {
-    background-color: whitesmoke;
+    background-color: var(--bg-color);
     max-height: 700px;
 }
 
@@ -116,7 +120,7 @@ header section {
 }
 
 #About-Me {
-    color:whitesmoke;
+    color:var(--bg-color);
     text-align: center;
     padding: 30px 100px 0px 100px;
 }
@@ -148,7 +152,7 @@ header section {
  
 #My-Work {
     background-color: #4dd6f5;
-    color: whitesmoke;
+    color: var(--bg-color);
     text-align: center;
 }  
 
@@ -179,7 +183,7 @@ header section {
 
 #Contact-Me {
     background-color: #52A0B2;
-    color: whitesmoke;
+    color: var(--bg-color);
     text-align: center;
     min-height: 150px;
 }
