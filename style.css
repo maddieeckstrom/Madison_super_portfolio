@@ -1,7 +1,16 @@
+/* sets the height and background color of the header in the body */
+body header {
+    background-color: whitesmoke;
+    max-height: 800px;
+}
+
+/* allows for responsive design in navbar */
 nav {
     display: flex;
 }
 
+/* allows the navbar to utilize the whole width of the page
+so that I may move the avatar to the right side of the screen */
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -10,32 +19,26 @@ nav ul {
     background-color: whitesmoke;
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
-nav li:last-child {
-    display: flex;
-    flex-direction: right;
-}
-
+/* displays the text to the center of each nav tab and adds padding */
 nav a {
     display: block;
     margin: 30px;
     color: black;
     text-align: center;
-    text-decoration: none;
     padding: 14px 16px;
-
 }
 
-nav a:hover {
-    background-color: rgba(249, 249, 94, 0.712);
-}
-
+/* moves the avatar to the right side of the nav bar for aesthetic purposes */
 #avatar-right {
     margin-top: 10px;
     max-width: 100%;
+    float: right;
 }
 
+/* sets the size and border for my avatar */
 nav img {
     background-color: whitesmoke;
     border-radius: 100%;
@@ -43,6 +46,12 @@ nav img {
     max-height: 150px;
 }
 
+/* Changes the background color to yellow when one hovers over the nav bar tabs */
+nav a:hover {
+    background-color: rgba(249, 249, 94, 0.712);
+}
+
+/* sets the navbar to wrap when the screen is below 768px */
 @media screen and (max-width: 768px) {
     nav ul {
         flex-direction: row;
@@ -50,6 +59,7 @@ nav img {
     }
 }
 
+/* imports font-family and style to be applied to 'Madison' graphic */
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
 * {
@@ -59,11 +69,8 @@ nav img {
 	font-family: "Poppins", sans-serif;
 }
 
-body header {
-    background-color: whitesmoke;
-    max-height: 800px;
-}
-
+/* sets 'Madison' graphic to the center of the screen and down the page for aesthetic,
+and adds color gradient leading into main portion of html */
 header section {
     display: flex;
     min-height: 100vh;
@@ -72,6 +79,7 @@ header section {
     background: linear-gradient(whitesmoke 40%, #f4dcac 75%);
 }
 
+/* all of the .my-name coding below sets style, design, and animation length to the 'Madison' grpahic within the my-name class */
 .my-name {
     position: relative;
 }
@@ -93,6 +101,7 @@ header section {
     animation: animate 4s ease-in-out infinite;
 }
 
+/* animates the wave in the 'Madison' graphic*/
 @keyframes animate {
     0%,
 	100% {
@@ -124,25 +133,30 @@ header section {
 	}
 }
 
- main h2 {
+/* adds padding so the <p> text doesn't reach to the sides of the web page for aesthetic purposes */
+#About-Me {
+    text-align: center;
+    padding: 0px 50px 0px 50px;
+}
+
+/* provides space between the header and the paragraph content */
+main h2 {
     margin-bottom: 20px;
 }
 
-#About-Me {
-    text-align: center;
-    padding: 30px 100px 30px 100px;
-}
-
+/* sets the font for the 'About-Me' section */
 main p {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* sets height and position of the wave below the 'About-Me' section */
 .wave-container {  
     height: 40vh;
     background-color: #f4dcac;
     position: relative;
   }
   
+  /* designs the structure of the wave below the 'About-Me' scetion */
   .wave-container::before {   
     content: "";
     width: 100%;
@@ -156,30 +170,43 @@ main p {
     background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 98L50 92C100 86 200 74 300 50C400 26 500 -10 600 2C700 14 800 74 900 98C1000 122 1100 110 1150 104L1200 98V134H1150C1100 134 1000 134 900 134C800 134 700 134 600 134C500 134 400 134 300 134C200 134 100 134 50 134H0V98Z' fill='%234dd6f5'/></svg>");
   }
   
+  /* allows the wave divider underneath 'About-Me' section to be responsive */
   @media(max-width:850px) {
     .wave-container::before {    
       height: 27px
     }  
   }
- 
+
+/* provides padding above the h2 in the 'My-Work' section and adds background color */
 #My-Work {
     background-color: #4dd6f5;
     text-align: center;
     padding-top: 30px;
-}  
+} 
 
+/* sets the height and color of 'My-Work' section */
+.wave {  
+    height: 750px;
+    background-color: #4dd6f5;
+    position: relative;
+  }
+
+/* sets the images in 'My-Work' to a column so 'Manny's Diving Adventures' is on top,
+and sets display to flex so 'My-Work' section is responsive*/
 .work-container {
     display: flex;
     flex-direction: column;
 }
 
+/* sets the bottom column to a row so two images (Volcanoes and Mount Kaala) sit side by side,
+and sets display to flex so section is responsive and the images can be spaced evenly*/
 .work-item-row {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-
+/* sets the image size, border, and margin to 'Manny's Diving Adventures' */
 .diving {
     border-radius: 100%;
     max-height: 400px;
@@ -187,6 +214,7 @@ main p {
     margin-top: 30px;
 }
 
+/* sets the image size, border, and margin to 'Volcanoes National Park' */
 .volcano {
     border-radius: 100%;
     max-height: 300px;
@@ -194,6 +222,7 @@ main p {
     margin-top: 30px;
 }
 
+/* sets the image size, border, and margin to 'Mount Kaala' */
 .kaala {
     border-radius: 100%;
     max-height: 300px;
@@ -201,12 +230,12 @@ main p {
     margin-top: 30px;
 }
 
-.wave {  
-    height: 750px;
-    background-color: #4dd6f5;
-    position: relative;
-  }
+/* sets the font for the nav link text in the 'My-Work' section */
+h4 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
   
+/* designs wave divider below 'My-Work' section */
   .wave::before {   
     content: "";
     width: 100%;
@@ -220,12 +249,15 @@ main p {
     background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 98L50 92C100 86 200 74 300 50C400 26 500 -10 600 2C700 14 800 74 900 98C1000 122 1100 110 1150 104L1200 98V134H1150C1100 134 1000 134 900 134C800 134 700 134 600 134C500 134 400 134 300 134C200 134 100 134 50 134H0V98Z' fill='%2352a0b2'/></svg>");
   }
   
+/* sets responsive design to wave dividers below 'My-Work' section */ 
   @media(max-width:850px) {
     .wave::before {    
       height: 27px
     }  
   }
 
+/* sets the dimensions and color for the 'Contact-Me section',
+   provides padding to the header as to not hit the wave, and centers the text */
 #Contact-Me {
     background-color: #52A0B2;
     text-align: center;
@@ -233,6 +265,7 @@ main p {
     padding-top: 30px;
 }
 
+/* sets the dimensions and border of the scuba diving avatar in the 'Contact-Me' section */
 main section img {
     max-width: 125px;
     max-height: 125px;
@@ -240,6 +273,8 @@ main section img {
     margin-bottom: 20px;
 }
 
+/* removes list style from the <li> in 'Contact-Me' section
+and provides space on the bottom of the webpage*/
 section ul {
     list-style-type: none;
     margin: 0;
@@ -247,7 +282,7 @@ section ul {
     overflow: hidden;
 }
 
+/* sets font for 'Contact-Me' section <li> */
 section li {
-    align-content: space-between;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
