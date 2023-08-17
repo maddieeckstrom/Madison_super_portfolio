@@ -1,5 +1,8 @@
 # Madison_super_portfolio
 
+Link to live site can be found here:
+https://maddieeckstrom.github.io/Madison_super_portfolio/ 
+
 ## Description
 
 This portfolio was designed to showcase who I am and the quality of my work in a clean yet unique and funky manner. I built this project to act as a resume when applying to jobs. This portfolio will act as a central hub for the three topics: About Me, My Work, and Contact Me. When creating this portfolio, I was able to learn how to apply many advanced CSS techniques to reach my desired outcome on the webpage. 
