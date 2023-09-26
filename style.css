@@ -207,7 +207,7 @@ and sets display to flex so section is responsive and the images can be spaced e
 }
 
 /* sets the image size, border, and margin to 'Manny's Diving Adventures' */
-.diving {
+.moviemix {
     border-radius: 100%;
     max-height: 400px;
     max-width: 400px;
