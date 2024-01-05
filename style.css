@@ -1,3 +1,6 @@
+/* imports font-family and style to be applied to 'Madison' graphic */
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
 /* sets the height and background color of the header in the body */
 body header {
     background-color: whitesmoke;
@@ -7,6 +10,10 @@ body header {
 /* allows for responsive design in navbar */
 nav {
     display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 /* allows the navbar to utilize the whole width of the page
@@ -19,7 +26,6 @@ nav ul {
     background-color: whitesmoke;
     display: flex;
     flex-direction: row;
-    width: 100%;
 }
 
 /* displays the text to the center of each nav tab and adds padding */
@@ -50,17 +56,6 @@ nav img {
 nav a:hover {
     background-color: rgba(249, 249, 94, 0.712);
 }
-
-/* sets the navbar to wrap when the screen is below 768px */
-@media screen and (max-width: 768px) {
-    nav ul {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-}
-
-/* imports font-family and style to be applied to 'Madison' graphic */
-@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
 * {
 	margin: 0;
